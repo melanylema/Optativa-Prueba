@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicina</title>
+    <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/formularios.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/transaccion.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <script type="text/javascript" src="js/metodos.js"></script>
+    <script type="text/javascript" src="js/logica.js"></script>
+
+
+
+</head>
+<body onload=" Administrar()">
+   <header>
+       <div class="contenedor">
+           <h1 class="icon-stethoscope">Telemedicina</h1>
+           <input type="checkbox" id="menu-bar">
+           <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="iniciarsesion.html">Iniciar Sesión</a>
+            <a href="registro.html">Registrarse</a>
+            <a href="index.html" onclick="cerrarSesion()" style="color: white;">Salir</a>
+
+        </nav>
+       </div>
+   </header> 
+   <main>
+    <section id="banner">
+        <img src="img/doctores.jpg">
+        <div class="contenedor">
+            <h2>Las mejores instalaciones y tecnología a su servicio</h2>
+            <p>Separa tu cita atendemos las 24 horas</p>
+        
+        </div>
+    </section>
+    <div id="main-container">
+
+        <table id="tabla-consulta">
+            <thead>
+                <tr>
+                    <th>Nombre Paciente</th>
+                    <th>Correo</th>
+                    <th>Area de cita</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Cambiar fecha</th>
+                    <th>Cambiar hora</th>
+                    <th>Aprobar</th>
+                    <th>Negar</th>
+                    <th>Guardar</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Telemedicina &copy;2021</p>
+ 
+        </div>
+    </footer>
+</body>
+
+
+</html>

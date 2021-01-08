@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicina</title>
+    <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/formularios.css">
+    <script type="text/javascript" src="js/metodos.js"></script>
+    <script type="text/javascript" src="js/logica.js"></script>
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/transaccion.css">
+</head>
+<body onload=" ocultar()">
+   <header>
+       <div class="contenedor">
+           <h1 class="icon-stethoscope">Telemedicina</h1>
+           <input type="checkbox" id="menu-bar">
+           <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="transaccion.html">Agendar Cita</a>
+            <a href="index.html" onclick="cerrarSesion()" style="color: white;">Salir</a>
+
+        </nav>
+       </div>
+   </header> 
+   <main>
+    <section id="banner">
+        <img src="img/doctores.jpg">
+        <div class="contenedor">
+            <h2>Las mejores instalaciones y tecnología a su servicio</h2>
+            <p>Separa tu cita atendemos las 24 horas</p>
+        
+        </div>
+    </section>
+       
+     
+        <form class="form-transaccion">
+            <p>Seleccione el especialista:</p>
+            <select id="especialidad" class="field" style="width: 90%;">
+                <option value="Medicina General">Medicina General</option>
+                <option value="Ginecologia ">Dermatólogo </option>
+                <option value="Pediatria ">Pediatria</option>
+                <option value="Odontologia">Odontólogo</option>
+                <option value="Odontologia">Oftalmólogo</option>
+                <option value="Odontologia">Cardiólogo</option>
+    
+            </select><br/>
+            <br>
+            <h3>Horario</h3>
+            <br>
+            <p>Dia:</p>
+            <input id="fecha" type="date" step="1" min="2020-07-20" max="2021-07-01" value="2021-01-07">
+            <p>Hora:</p>
+            <input id="hora" type="time" class="field" min="09:00" max="15:00" value="07:00">
+            <p>Indicaciones:</p>
+            <textarea id="mensaje" class="field"></textarea> <br/>
+    
+    
+        </form>
+        <div class="form-transaccion">
+            <button type="submit" class="btn-cita" onclick="GuardarCita()">Agendar cita</button>
+        </div>
+        <section id="info">
+            <h3>Especialidades</h3>
+            <div class="contenedor">
+                <div class="info-espe">
+                    <img src="img/medicinageneral.jpg">
+                    <h4>Medicina General</h4>
+                </div>
+                <div class="info-espe">
+                 <img src="img/pediatria.jpg">
+                 <h4>Pediatría</h4>
+             </div>
+             <div class="info-espe">
+                 <img src="img/odontologo.png">
+                 <h4>Odontólogo</h4>
+             </div>
+             <div class="info-espe">
+                 <img src="img/dermatologia.png">
+                 <h4>Dermatólogo</h4>
+             </div>
+             <div class="info-espe">
+                 <img src="img/oftalmologo.png">
+                 <h4>Oftalmólogo</h4>
+             </div>
+             <div class="info-espe">
+                 <img src="img/cardiologo.png">
+                 <h4>Cardiólogo</h4>
+             </div>
+            </div>
+ 
+        </section>
+<body>
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Telemedicina &copy;2021</p>
+ 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+#img {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+#mapa {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cards_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+    width: 25%;
+    padding: 10px;
+}
+
+.cards_wrap .card_inner {
+    background: #fff;
+}
+
+.cards_wrap .card_top {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+    padding: 15px;
+}
+
+.cards_wrap .card_bottom .card_category {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px dashed #0071bc;
+}
+
+.cards_wrap .card_bottom .card_info .title {
+    color: #0071bc;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cards_wrap .card_bottom .card_creator {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .cards_wrap .card_item {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards_wrap .card_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 528px) {
+    .cards_wrap .card_item {
+        width: 100%;
+    }
+}
+
+.form-transaccion {
+    background-color: rgba(158, 112, 202, 0.487);
+
+    font-size: 0.8em;
+    padding: 25px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.form-transaccion input,
+textarea {
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.field:focus {
+    border-color: #18A383;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.btn-cita {
+    width: 100%;
+    background: #2b838f;
+    border-radius: 50px;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-aprobar {
+    width: 100%;
+    background: #7aaed8;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-negar {
+    width: 100%;
+    background: #ff0000b6;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-guardar {
+    width: 100%;
+    background: #258230;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
